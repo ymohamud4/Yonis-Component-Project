@@ -1,4 +1,4 @@
-public abstract class MoviePlayListSecondaryMethods implements MoviePlaylist {
+public abstract class MoviePlaylistSecondary implements MoviePlaylist {
 
     @Override
     public boolean doesItExist(String movieTitle) {
