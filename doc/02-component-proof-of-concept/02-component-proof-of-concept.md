@@ -114,7 +114,7 @@ Below is further rationale/explanation for the rubric items above:
 > to create a new design. In you do end up picking one at random, you should
 > disclose that here as well.
 
-I want to go with a MoviePlaylist, simple playlist where you can add, remove and shuffle different movies you like and want to watch, it seems like a practical component, and seems simple to build
+I want to go with a MoviePlaylist, simple playlist where you can add, remove and shuffle different movies you like and want to watch, it seems like a practical component, and seems simple to build, also it seems fun to build
 
 > Once you've argued your choice of design, make a branch in your new repo called
 > something like `proof-of-concept`. There are many ways to do this, but my
