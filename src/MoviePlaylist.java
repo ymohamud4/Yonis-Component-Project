@@ -6,6 +6,8 @@ this interface extends from {@code MoviePlaylistKernel}
 these are the enhanced kernel methods for {@code MoviePlaylist}
 
 @author Yonis Mohamud
+
+this project is cool
 */
 
 public interface MoviePlaylist extends MoviePlaylistKernel {
@@ -34,18 +36,17 @@ public interface MoviePlaylist extends MoviePlaylistKernel {
     void shuffle();
 
     /*
-     * @param moviePlayList2 another movie playlist
+     * @param other another movie playlist whose movies will be appended to this
      *
      * @updates this
+     * 
+     * @clears other
      *
-     * @clears moviePlayList2
+     * @requires other != this
      *
-     * @requires anotherPlayList != this
-     *
-     * @ensures, joinPlayList = #this properly concatenates with moviePlayList2
-     *
-     *
+     * @ensures this = #this * #other
+     * 
+     * @ensures other = <empty playlist>
      */
-    void joinPlaylist();
-
+    void joinPlaylist(MoviePlaylist other);
 }

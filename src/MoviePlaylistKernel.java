@@ -21,6 +21,7 @@ public interface MoviePlaylistKernel extends Standard<MoviePlaylistKernel> {
      *
      */
 
+    @Override
     void addMovie(String movieTitle);
 
     /*
@@ -44,4 +45,26 @@ public interface MoviePlaylistKernel extends Standard<MoviePlaylistKernel> {
      */
 
     int size();
+
+    /*
+     *
+     * @Param movieTitle movie to insert
+     *
+     * @update this
+     *
+     * @requires this.size >0
+     *
+     * @ensure this = at least one movie title has been replace
+     *
+     */
+
+    void replaceMovie(String movieTitle);
+
+    /**
+     * Removes and returns any movie from the playlist.
+     *
+     * @updates this
+     * @ensures removeAny is in #this
+     */
+    String removeAny();
 }
