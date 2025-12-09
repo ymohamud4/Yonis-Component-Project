@@ -14,6 +14,9 @@ public class Movie {
      * in the part what I will keep
      *
      */
+
+    /*
+    proof of concept part 2 because it didn't commit last time */
     public Movie() {
         this.moviePlayList = new ArrayList<>();
     }
