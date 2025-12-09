@@ -70,6 +70,5 @@ public interface Standard<T> {
      */
     void transferFrom(T source);
 
-    void addMovie(String movieTitle);
 
 }
