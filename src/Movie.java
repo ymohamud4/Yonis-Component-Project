@@ -5,6 +5,7 @@ import java.util.Random;
 public class Movie {
     private List<String> moviePlayList;
 
+    /**Making sure this part is properly documentated */
     /*
      *
      * These are the methods that I am deciding on, most of them are standard
