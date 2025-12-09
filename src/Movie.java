@@ -18,6 +18,12 @@ public class Movie {
         this.moviePlayList = new ArrayList<>();
     }
 
+    public String getMovie(int i) {
+    if (i< 0 || i >= this.moviePlayList.size()) {
+        return null;
+    }
+    return this.moviePlayList.get(i);
+}
     public void addMovie(String movieName) {
         this.moviePlayList.add(movieName);
     }
