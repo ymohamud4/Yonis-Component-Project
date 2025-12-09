@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
-public class MoviePlayListOnArrayList extends MusicPlayListSecondaryMethods {
+public class MoviePlaylistKernelImplementation extends MoviePlaylistSecondary {
 
     private ArrayList<String> movieList;
 
-    public MoviePlayListOnArrayList() {
+    public MoviePlaylistKernelImplementation() {
         this.movieList = new ArrayList<>();
     }
 
@@ -38,7 +38,7 @@ public class MoviePlayListOnArrayList extends MusicPlayListSecondaryMethods {
 
     @Override
     public MoviePlaylistKernel newInstance() {
-        return new MoviePlayListOnArrayList();
+        return new MoviePlaylistKernelImplementation();
     }
 
     @Override
@@ -51,9 +51,9 @@ public class MoviePlayListOnArrayList extends MusicPlayListSecondaryMethods {
     public void transferFrom(MoviePlaylistKernel other) {
         assert other != null;
         assert other != this;
-        assert other instanceof MoviePlayListOnArrayList;
+        assert other instanceof MoviePlaylistKernelImplementation;
 
-        MoviePlayListOnArrayList src = (MoviePlayListOnArrayList) other;
+        MoviePlaylistKernelImplementation src = (MoviePlaylistKernelImplementation) other;
 
         this.movieList = src.movieList;
         src.movieList = new ArrayList<>();
