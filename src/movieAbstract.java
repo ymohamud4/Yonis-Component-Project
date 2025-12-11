@@ -1,4 +1,4 @@
-public abstract class MoviePlaylistSecondary implements MoviePlaylist {
+public abstract class movieAbstract implements MovieSecondaryKernel {
 
     @Override
     public boolean doesItExist(String movieTitle) {
@@ -48,7 +48,7 @@ public abstract class MoviePlaylistSecondary implements MoviePlaylist {
     }
 
     @Override
-    public void joinPlaylist(MoviePlaylist other) {
+    public void joinPlaylist(MovieSecondaryKernel other) {
 
         while (other.size() > 0) {
             String replaceMovie = other.removeAny();

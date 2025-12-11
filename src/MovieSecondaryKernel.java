@@ -10,7 +10,7 @@ these are the enhanced kernel methods for {@code MoviePlaylist}
 this project is cool
 */
 
-public interface MoviePlaylist extends MoviePlaylistKernel {
+public interface MovieSecondaryKernel extends Moviekernel {
 
     /*
      * @param movieTitle the title of the movie you want to check
@@ -48,5 +48,5 @@ public interface MoviePlaylist extends MoviePlaylistKernel {
      * 
      * @ensures other = <empty playlist>
      */
-    void joinPlaylist(MoviePlaylist other);
+    void joinPlaylist(MovieSecondaryKernel other);
 }

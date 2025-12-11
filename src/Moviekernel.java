@@ -1,7 +1,7 @@
 /**
  * Kernel interface for a Movie Playlist.
  *
- * these are the kernel for {@code MusicPlayListKernel} which extends from
+ * these are the kernel for {@code MovePlayListKernel} which extends from
  * {@code Standard}
  *
  * @author Yonis Mohamud
@@ -10,18 +10,18 @@
  *
  */
 
-public interface MoviePlaylistKernel extends Standard<MoviePlaylistKernel> {
+public interface Moviekernel extends Standard<Moviekernel> {
 
     /*
      *
      * @param movieTitle the name of the movieTitle you will add
      *
-     * @updates addMovie = #this with movieTitle Added
+     * @updates addMovie = #this with movieTitle Added njbj
      *
      *
      */
 
-    @Override
+    
     void addMovie(String movieTitle);
 
     /*
