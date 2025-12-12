@@ -1,3 +1,4 @@
+package components;
 
 // this is from osu, because it is well structured and
 //good for what i need
