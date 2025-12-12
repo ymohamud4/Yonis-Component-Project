@@ -15,30 +15,10 @@ package components;
  */
 public abstract class MovieAbstract implements MovieSecondaryKernel {
 
-    @Override
-    public boolean doesItExist(String movieTitle) {
-       
-
-        int sz = this.size();
-    boolean exists = false;
-
-    String[] temp = new String[sz];
-
-    for (int i = 0; i < sz; i++) {
-        String z = this.removeAny();
-        temp[i] = z;
-
-        if (z.equals(movieTitle)) {
-            exists = true;
-        }
-    }
-
-    for (int i = 0; i < sz; i++) {
-        this.addMovie(temp[i]);
-    }
-
-    return exists;
-    }
+    /*
+    
+    movie playlist shuffle which rearrages the list of movies
+    */
 
     @Override
     public void shuffle() {
@@ -47,25 +27,28 @@ public abstract class MovieAbstract implements MovieSecondaryKernel {
             return;
         }
 
-        String[] holder = new String[sz];
+        String[] movieHolder = new String[sz];
 
       
-        for (int i = 0; i < sz; i++) {
-            holder[i] = this.removeAny();
+        for (int movie = 0; movie < sz; movie++) {
+            movieHolder[movie] = this.removeAny();
         }
 
-        for (int i = 0; i < sz - 1; i++) {
-            String temp = holder[i];
-            holder[i] = holder[i + 1];
-            holder[i + 1] = temp;
+        for (int movie = 0; movie < sz - 1; movie++) {
+            String temp = movieHolder[movie];
+            movieHolder[movie] = movieHolder[movie + 1];
+            movieHolder[movie + 1] = temp;
         }
 
         
-        for (int i = 0; i < sz; i++) {
-            this.addMovie(holder[i]);
+        for (int movie = 0; movie < sz; movie++) {
+            this.addMovie(movieHolder[movie]);
         }
     }
 
+    /*
+    takes all the movies of one playlist and puts it in another
+    */
     @Override
     public void joinPlaylist(MovieSecondaryKernel other) {
         
@@ -74,22 +57,5 @@ public abstract class MovieAbstract implements MovieSecondaryKernel {
         }
     }
 
-    @Override
-    public void replaceExisting(String oldT, String newT) {
-    int sz = this.size();
-    String[] holder = new String[sz];
-
-    for (int i = 0; i < sz; i++) {
-        String removal = this.removeAny();
-        if (removal.equals(oldT)) {
-            holder[i] = newT;
-        } else {
-            holder[i] = removal;
-        }
-    }
-
-    for (String m : holder) {
-        this.addMovie(m);
-    }
-}
+    
 }

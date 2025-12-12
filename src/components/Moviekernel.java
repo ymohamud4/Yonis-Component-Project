@@ -44,21 +44,20 @@ public interface Moviekernel extends Standard<Moviekernel> {
 
 
     /*
-    show alls movies in list
+    tells you alls movies in list
     
-    @returns a list of all movies
+    @returns a list of all movies in this
     */
      List<String> seeAll();
 
     /**
-     * replaces movie with another of your choice
+     * allows you to replace a movie with another
      *
-     * @param movieTitle replacement movie title
+     * @param oldT the movie title to replace
+     * @param newT the new movie title
      * @updates this
-     
-     * @ensures that a movietitle was replaced with another
      */
-    void replaceMovie(String movieTitle);
+    void replaceMovie(String oldT, String newT);
 
     /**
      * Removes and returns any movie from this playlist.
@@ -69,10 +68,15 @@ public interface Moviekernel extends Standard<Moviekernel> {
      */
     String removeAny();
 
-    /*
-    @return
-        if the movie exist in this, true or false
-    
+     /**
+     * Reports whether the given movie title exists in this playlist.
+     *
+     * @param movieTitle
+     *            the movie title to check
+     * @return true if movieTitle is in this, false otherwise
+     * 
+     * @ensures doesItExist = movietitle is in the playlist
      */
-    boolean doesItExist(String string);
+    boolean doesItExist(String movieTitle);
+
 }

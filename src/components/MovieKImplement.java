@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Standard Kernel Implementations for Movielist
  * 
- * standard methods, such as addmovie, eraseMovie, seeAll, size,etc
+ * standard methods, such as addmovie, eraseMovie, seeAll, size, doesItExist, clearetc
  */
 public final class MovieKImplement extends MovieAbstract {
 
@@ -17,7 +17,7 @@ public final class MovieKImplement extends MovieAbstract {
     private ArrayList<String> movieList;
 
     /**
-     *  constructor  to initializ an empty playlist.
+     *  constructor  to initializ an empty arraylist for the playlist.
      */
     public MovieKImplement() {
         this.movieList = new ArrayList<>();
@@ -45,14 +45,52 @@ public final class MovieKImplement extends MovieAbstract {
         return this.movieList.size();
     }
 
-    @Override
-    public void replaceMovie(String movieTitle) {
-     
 
-        int index = this.size() / 2;
-        this.movieList.set(index, movieTitle);
+    @Override
+        public void replaceMovie(String oldT, String newT) {
+        int sz = this.size();
+        String[] movieHolder = new String[sz];
+
+        for (int movie = 0; movie < sz; movie++) {
+            String removedMovie = this.removeAny();
+            if (removedMovie.equals(oldT)) {
+                movieHolder[movie] = newT;
+            } else {
+                movieHolder[movie] = removedMovie;
+            }
+        }
+
+        for (String movies : movieHolder) {
+            this.addMovie(movies);
+        }
+}
+
+
+ @Override
+    public boolean doesItExist(String movieTitle) {
+       
+
+        int sz = this.size();
+        boolean doesExists = false;
+
+        String[] movieHolder = new String[sz];
+
+        for (int movie = 0; movie < sz; movie++) {
+        String removedMovie = this.removeAny();
+        movieHolder[movie] = removedMovie;
+
+        if (removedMovie.equals(movieTitle)) {
+            doesExists = true;
+        }
     }
 
+    for (int movie = 0; movie < sz; movie++) {
+        this.addMovie(movieHolder[movie]);
+    }
+
+    return doesExists;
+    }
+   
     @Override
     public String removeAny() {
         
@@ -74,9 +112,9 @@ public final class MovieKImplement extends MovieAbstract {
     public void transferFrom(Moviekernel source) {
         
 
-        MovieKImplement sourcePlaylist = (MovieKImplement) source;
+        MovieKImplement movieList = (MovieKImplement) source;
 
-        this.movieList = sourcePlaylist.movieList;
-        sourcePlaylist.movieList = new ArrayList<>();
+        this.movieList = movieList.movieList;
+        movieList.movieList = new ArrayList<>();
     }
 }

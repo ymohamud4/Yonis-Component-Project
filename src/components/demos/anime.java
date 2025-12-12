@@ -34,7 +34,7 @@ public class anime {
 
         //lets say that i want to replace a certain anime with a different one
 
-        myTopAnimeBingeWatches.replaceExisting("Bleach", "JJk");
+        myTopAnimeBingeWatches.replaceMovie("Bleach", "JJk");
 
         System.out.println(myTopAnimeBingeWatches.seeAll());
 
@@ -43,7 +43,23 @@ public class anime {
         System.out.println(myTopAnimeBingeWatches.doesItExist("Naruto") );
 
 
-        
+        // you want to add your friends favorites in to your playlist to see why he likes
+        // those anime so much
+        MovieSecondaryKernel whatsTheHype = new MovieKImplement();
+        whatsTheHype.addMovie("Attack on Titan");
+        whatsTheHype.addMovie("JoJO's Bizarre Adventura");
+        whatsTheHype.addMovie("Cowboy Bebop");
+        whatsTheHype.addMovie("Spirited Away");
+
+
+
+
+       myTopAnimeBingeWatches.joinPlaylist(whatsTheHype);
+
+       System.out.println(myTopAnimeBingeWatches.seeAll());
+
+
+
 
       
 
