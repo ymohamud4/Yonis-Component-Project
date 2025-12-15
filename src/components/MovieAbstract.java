@@ -5,7 +5,7 @@ package components;
  * 
  *
  * Provides implementations for:
- *  - doesItExist
+ * 
  *  - shuffle
  *  - joinPlaylist
  *

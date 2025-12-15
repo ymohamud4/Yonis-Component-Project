@@ -18,7 +18,7 @@ public class saturdayNightVibez {
         mySaturdayVibez.addMovie("Gladiator");
         mySaturdayVibez.addMovie("MazeRunner 2012");
         mySaturdayVibez.addMovie("The Minecraft Movie");
-        mySaturdayVibez.addMovie("The Lord of the ringer");
+        mySaturdayVibez.addMovie("The Lord of the rings");
         mySaturdayVibez.addMovie("cats 2019, the live action");
 
 
@@ -38,23 +38,21 @@ public class saturdayNightVibez {
         // family movie night
 
         mySaturdayVibez.size();
+        System.out.println(mySaturdayVibez.size());
+        
+        //you want to remove a random movie from the list
+        mySaturdayVibez.removeAny();
+        System.out.println(mySaturdayVibez.removeAny());
 
-        // you want to add your friends playlist to your
-
-        MovieSecondaryKernel friendsList = new MovieKImplement();
-
-        friendsList.addMovie("avengers");
-        friendsList.addMovie("harry potter and the globet of fire");
-        friendsList.addMovie("chicken litter");
-        friendsList.addMovie("mulan");
-
-        mySaturdayVibez.joinPlaylist(friendsList);
-
-        System.out.println(mySaturdayVibez.seeAll());
+        
 
         // your done watching your movies and it is time to lock in
         mySaturdayVibez.clear();
-        
+
+
+        // you want to see if a certain movie is in the playlist
+        mySaturdayVibez.doesItExist("Gladiator");
+        System.out.println(mySaturdayVibez.doesItExist("Gladiator"));
 
 
 

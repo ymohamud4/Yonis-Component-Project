@@ -3,9 +3,11 @@ package components;
 import java.util.List;
 
 /**
- * Kernel interface for a Movie Playlist.
+ * Kernel interface for a {@code Movie}.
+ * 
+ * that provides basic functions for our Movie Class
  *
- *
+ * 
  *
  * @author Yonis Mohamud
  */
@@ -14,7 +16,8 @@ public interface Moviekernel extends Standard<Moviekernel> {
     /**
      * adds the given movie into the list
      *
-     * @param movieTitle the movie you want to add
+     * @param movieTitle 
+     *          the movie you want to add
      * @updates this
      *
      * @ensures movieTitle is in this
@@ -24,10 +27,11 @@ public interface Moviekernel extends Standard<Moviekernel> {
     /**
      * erase a given movie
      *
-     * @param movieTitle the movie erase
+     * @param movieTitle 
+     *          the movie to erase
      * @updates this
      * 
-     * @ensures movie no longer exist in this
+     * @ensures that the given movie is no longer exist in this
      */
     void eraseMovie(String movieTitle);
 
@@ -53,8 +57,8 @@ public interface Moviekernel extends Standard<Moviekernel> {
     /**
      * allows you to replace a movie with another
      *
-     * @param oldT the movie title to replace
-     * @param newT the new movie title
+     * @param oldT the movie title you want to replace
+     * @param newT the new movie title to replace the old one with
      * @updates this
      */
     void replaceMovie(String oldT, String newT);
@@ -64,7 +68,7 @@ public interface Moviekernel extends Standard<Moviekernel> {
      *
      * @updates this
      * @requires this.size() > 0
-     * @ensures removeAny is in #this
+     * @ensures removeAny , will return any movie
      */
     String removeAny();
 

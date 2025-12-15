@@ -7,6 +7,9 @@ package components;
 
 Enhanced kernel interface for movielist
 
+This interface extends {@code Moviekernel} by adding secondary operations
+ * that give even more enhanced features of our kernel.
+
 */
 public interface MovieSecondaryKernel extends Moviekernel {
 
@@ -21,7 +24,7 @@ public interface MovieSecondaryKernel extends Moviekernel {
     void shuffle();
 
     /**
-     * takes movies from one playlist and puts it in another
+     * takes movies from one playlist and puts it in another, and clearing the other
      *
      * @param other
      *            another movie playlist

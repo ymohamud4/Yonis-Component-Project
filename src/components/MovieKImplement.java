@@ -5,9 +5,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Standard Kernel Implementations for Movielist
+ * Standard Kernel Implementations for a {@code Movie}
  * 
- * standard methods, such as addmovie, eraseMovie, seeAll, size, doesItExist, clearetc
+ * MovieKImplement implements {@code MovieKernel} giving us implementations
+ * for our {@code Movie} class
+ * 
+ * standard methods, such as addmovie, eraseMovie,
+ *  seeAll, size, doesItExist, clear, etc
  */
 public final class MovieKImplement extends MovieAbstract {
 
@@ -17,7 +21,7 @@ public final class MovieKImplement extends MovieAbstract {
     private ArrayList<String> movieList;
 
     /**
-     *  constructor  to initializ an empty arraylist for the playlist.
+     *  constructor  to initializ an empty arraylist for your list of movies.
      */
     public MovieKImplement() {
         this.movieList = new ArrayList<>();
@@ -66,7 +70,7 @@ public final class MovieKImplement extends MovieAbstract {
 }
 
 
- @Override
+  @Override
     public boolean doesItExist(String movieTitle) {
        
 
