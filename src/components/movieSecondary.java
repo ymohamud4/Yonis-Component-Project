@@ -8,12 +8,15 @@ package components;
  * 
  *  - shuffle
  *  - joinPlaylist
+ * 
+ *  This abstract class implements {@code MovieSecondaryKernel} and provides
+ * implementations for our secondary methods for the {@Movie class}
  *
  * 
  *
  * @author Yonis Mohamud
  */
-public abstract class MovieAbstract implements MovieSecondaryKernel {
+public abstract class movieSecondary implements MovieSecondaryKernel {
 
     /*
     

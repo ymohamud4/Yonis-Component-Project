@@ -7,8 +7,8 @@ package components;
 
 Enhanced kernel interface for movielist
 
-This interface extends {@code Moviekernel} by adding secondary operations
- * that give even more enhanced features of our kernel.
+This interface extends {@code Moviekernel} giving us secondary operations
+that give even more enhanced features for {@code Movie}.
 
 */
 public interface MovieSecondaryKernel extends Moviekernel {

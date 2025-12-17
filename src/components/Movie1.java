@@ -7,13 +7,20 @@ import java.util.List;
 /**
  * Standard Kernel Implementations for a {@code Movie}
  * 
- * MovieKImplement implements {@code MovieKernel} giving us implementations
+ * Movie1 implements {@code MovieKernel} giving us implementations
  * for our {@code Movie} class
+ * 
+ * @convention
+ *         Movielist is not null
+ * @correspondance
+ *        this = [the sequence of the movie titles movie1[0..movieList.size() - 1]]
+ *          
+ * 
  * 
  * standard methods, such as addmovie, eraseMovie,
  *  seeAll, size, doesItExist, clear, etc
  */
-public final class MovieKImplement extends MovieAbstract {
+public final class Movie1 extends movieSecondary {
 
     /**
      * my representation is an arraylist 
@@ -23,7 +30,7 @@ public final class MovieKImplement extends MovieAbstract {
     /**
      *  constructor  to initializ an empty arraylist for your list of movies.
      */
-    public MovieKImplement() {
+    public Movie1() {
         this.movieList = new ArrayList<>();
     }
 
@@ -104,7 +111,7 @@ public final class MovieKImplement extends MovieAbstract {
 
     @Override
     public Moviekernel newInstance() {
-        return new MovieKImplement();
+        return new Movie1();
     }
 
     @Override
@@ -116,7 +123,7 @@ public final class MovieKImplement extends MovieAbstract {
     public void transferFrom(Moviekernel source) {
         
 
-        MovieKImplement movieList = (MovieKImplement) source;
+        Movie1 movieList = (Movie1) source;
 
         this.movieList = movieList.movieList;
         movieList.movieList = new ArrayList<>();

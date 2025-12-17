@@ -1,6 +1,6 @@
 package components.demos;
 
-import components.MovieKImplement;
+import components.Movie1;
 import components.MovieSecondaryKernel;
 
 public class saturdayNightVibez {
@@ -12,7 +12,7 @@ public class saturdayNightVibez {
         
        
        // intializing a new movie playlist to watch with your family on a weekend
-        MovieSecondaryKernel mySaturdayVibez = new MovieKImplement();
+        MovieSecondaryKernel mySaturdayVibez = new Movie1();
 
         // you add you movies to your list on netflix or something
         mySaturdayVibez.addMovie("Gladiator");

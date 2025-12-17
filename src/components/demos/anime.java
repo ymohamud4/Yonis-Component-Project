@@ -1,6 +1,6 @@
 package components.demos;
 
-import components.MovieKImplement;
+import components.Movie1;
 import components.MovieSecondaryKernel;
 
 public class anime {
@@ -11,7 +11,7 @@ public class anime {
         // but I love anime and I didn't think about it when I was making this playlist
         //so I appologize
 
-        MovieSecondaryKernel myTopAnimeBingeWatches = new MovieKImplement();
+        MovieSecondaryKernel myTopAnimeBingeWatches = new Movie1();
 
 
         myTopAnimeBingeWatches.addMovie("one Piece");
@@ -45,7 +45,7 @@ public class anime {
 
         // you want to add your friends favorites in to your playlist to see why he likes
         // those anime so much
-        MovieSecondaryKernel whatsTheHype = new MovieKImplement();
+        MovieSecondaryKernel whatsTheHype = new Movie1();
         whatsTheHype.addMovie("Attack on Titan");
         whatsTheHype.addMovie("JoJO's Bizarre Adventura");
         whatsTheHype.addMovie("Cowboy Bebop");
