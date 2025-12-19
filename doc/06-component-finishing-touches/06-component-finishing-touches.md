@@ -1,8 +1,8 @@
 # Portfolio Part 6: Finishing Touches
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) and delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) and delete this comment -->
-- **Due Date**: <!-- TODO: fill out with due date and time (e.g., 10/17 @ 3:10 PM EST) and delete this comment -->
+- **Name**: Yonis Mohamud
+- **Dot Number**: Mohamud.121
+- **Due Date**: 12/19/25
 
 ## Assignment Overview
 
@@ -307,18 +307,19 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+ I think honestly I got better at not only understanding object oriented programming but knowing how to create things. I got better at understanding interfaces and classes, understanding the heirarchy of those, how to actually implement them and etc.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+The portfolio project helped with some gaps in my knowledge getting better at understanding concepts like inheritance, overriding, kernel methods, secondary kernal methods, this project helped me genuinely made me understand how to incorporate all these concepts. I feel like the gaps is more like I knew about these concepts in a general way but actually applying them made me understand the practicality of their use case
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+After this portfolio project, I say my perspectivee on software engineer still remains the same, I find it 
+enjoyable to an extent. I like software engineering because their are so many different languages and frameworks that handle different problems and provide different solutions, so being able to learn new things and different language rules and how they apply will always be fun, and this portfolio project was fun because I was creating a component in a class where I have used it alot, so it was fun being the implementer
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,25 +327,35 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+I think the skills that I picked up was just learning as I go. Learning on the go is very important I feel like in this field. as well as writing clean code. learning on the go is important because it removes the fear and burden of not knowing, I can instead learn about a new topic and then apply what I learned to a project as opposed to thinking I need to know everything. Writing clean code is also important, clean code that others can understand, I think I made a lot of names and methods in a way that made sense for me in the moment but probably wouldn't make sense for the user, so writing clean, maintainable code is important for users to be able to navigate your code.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+ *designed a coded a java component using interfaces and abstraction
+
+ *used Junit to test make sure methods, and object representations were correct
+ 
+ *developed an understanding of git version control and publishing to github
+
+ *created use cases to user can see how they might use this component
+
+ *developed a better understanding of java concepts such as, kernel interface, kernal classes, abstract interfaces and classes, and concepts such as overriding
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+In terms of career trajectory, i believe this project made me appreciate learning, For example I hate leetcode not because I hate coding but the fact the not knowing one arbitrary problem means losing out on a potential career, this project made me appreciate the simple times of software engineering where it was more about understanding the fundamentals of oop and how to apply those concepts in a real way. So this project made like software engineering more because of being able to learn with direction.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I can keep building small projects that can help me learn topics that I might not know or no little of, continue to write code in parts similar to this project, write test cases to make sure that the methods work as intended, contribute to open source projects, and gradually work my way up to enterprise level developement.
+
+Mentors that I can contact first and foremost would be the lengendary Jeremy Grifski, geniunely the best cse teacher, he made the class super intuitive, and made learning hard topics really easy by letting students discuss topics they have no idea about so that we can build off of our assumptions of concepts or create new ones, all in all 10/10 teacher. 
 
 ### Changelog
 
